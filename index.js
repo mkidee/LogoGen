@@ -1,9 +1,12 @@
+// we need to include fs and inquirer as they are dependencies, as well we must include our shapes.js page for reference
 const fs = 'fs';
 const inquirer = 'inquirer';
 const {Circle, Square, Triangle} = require("./library/shapes");
 
+// choices for the logo selection
 const shapeChoice = ['Circle', 'Square', 'Triangle'];
 
+//these questions will be asked in order to create the users logo
 const questions = [
     {
         type: "input",
@@ -27,3 +30,5 @@ const questions = [
         message: "What color would you like your logo to be:"
     }
 ];
+
+// to create the actual SVG now with the specifications
