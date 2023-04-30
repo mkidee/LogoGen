@@ -26,4 +26,4 @@ const questions = [
         name: "shapeColor",
         message: "What color would you like your logo to be:"
     }
-]
+];
