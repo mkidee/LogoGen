@@ -61,10 +61,10 @@ function writeSVG(data) {
     fs.writeFile(logoSource, baseSVG, function(err) {
         err ? console.log(err) : console.log("Done! Logo was successfully created in the 'createdlogo' folder!")
     });
+}
 
     function init() {
         inquirer.prompt(questions).then(data => writeSVG(data));
     }
 
     init();
-}
